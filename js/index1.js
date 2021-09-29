@@ -41,10 +41,6 @@ function addAndUpdate() {
     update();
 }
 
-
-let add = document.getElementById("add");
-add.addEventListener("click", addAndUpdate);
-
 function deleted(itemIndex) {
     console.log("Delete", itemIndex);
     itmesJsonArrayStr = localStorage.getItem('itmesJson');
@@ -55,3 +51,15 @@ function deleted(itemIndex) {
     localStorage.setItem('itmesJson', JSON.stringify(itmesJsonArray));
     update();
 }
+
+function clearStorage() {
+    if (confirm("Do you really want to confirm? ")) {
+        localStorage.clear();
+        update();
+    }
+}
+
+let add = document.getElementById("add");
+add.addEventListener("click", addAndUpdate);
+update();
+
