@@ -1,0 +1,48 @@
+.navbar{
+    background-color: black;
+    border-radius: 4px;
+}
+.navbar li{
+    float: left;
+    list-style: none;
+}
+.navbar ul{
+    overflow: auto;
+    color: blanchedalmond;
+
+}
+.navbar li a{
+    display: flex;
+    justify-content: space-between;
+    padding: 3px 4px;
+    margin: 19px 13px 0px 4px;
+    text-decoration: none;
+    color: blanchedalmond;
+
+}
+.navbar li :hover{
+    color: rgb(184, 0, 0);
+}
+input{
+    background-color: whitesmoke;
+    border-radius: 20px;
+    float: right;
+    width: 117px;
+    margin: 19px 10px 0px 0px;
+
+}
+button{
+    background-color: whitesmoke;
+    float: right;
+    border-radius: 20px;
+    cursor: pointer;
+    margin: 19px 20px 0px 5px;
+}
+.brand img{
+    width: 110px;
+}
+.brand{
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+}
